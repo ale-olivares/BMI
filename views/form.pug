@@ -1,0 +1,16 @@
+extends layout.pug 
+
+block content 
+    div.header
+        form(action="/" method="post")
+            h1 BMI calculator
+            p Insert Your Age
+            input(type="text" id="age" name="age" value=age)
+            p Insert Weight in Kg
+            input(type="text" id="weight" name="weight" value=weight)
+            br
+            p Insert Height in cm
+            input(type="text" id="height" name="height" value=height)
+            br
+            button(id="calc" type="submit") check
+            p(id="result")= result
